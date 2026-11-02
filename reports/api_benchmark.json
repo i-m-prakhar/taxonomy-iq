@@ -1,0 +1,8 @@
+{
+  "mode": "sequential in-process TestClient, warm model, local SQLite, 100 requests",
+  "count": 100,
+  "p50_ms": 6.363,
+  "p95_ms": 8.859,
+  "max_ms": 10.006,
+  "limitations": "Not network load testing; machine-dependent; no production SLO inference."
+}

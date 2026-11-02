@@ -1,0 +1,14 @@
+services:
+  api:
+    build: .
+    ports: ["127.0.0.1:8000:8000"]
+    environment:
+      TAXONOMYIQ_API_KEY: ${TAXONOMYIQ_API_KEY:-}
+      TAXONOMYIQ_REVIEW_THRESHOLD: ${TAXONOMYIQ_REVIEW_THRESHOLD:-0.70}
+    volumes: ["taxonomyiq_runtime:/app/runtime"]
+    restart: unless-stopped
+    read_only: true
+    tmpfs: [/tmp]
+    security_opt: ["no-new-privileges:true"]
+volumes:
+  taxonomyiq_runtime:

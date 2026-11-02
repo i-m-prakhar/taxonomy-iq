@@ -1,0 +1,9 @@
+actual/predicted,apparel_footwear,consumer_electronics,dairy_grocery,digital_services,home_kitchen,personal_care,sporting_goods,shelf_stable_food
+apparel_footwear,3,1,0,0,0,1,6,1
+consumer_electronics,0,3,0,1,0,0,4,4
+dairy_grocery,0,0,7,0,0,4,1,0
+digital_services,0,0,0,12,0,0,0,0
+home_kitchen,8,3,0,0,0,0,1,0
+personal_care,0,1,1,0,0,9,0,1
+sporting_goods,1,0,0,0,0,5,5,1
+shelf_stable_food,0,0,0,0,0,2,0,10

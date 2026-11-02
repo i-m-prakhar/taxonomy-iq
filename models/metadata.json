@@ -1,0 +1,26 @@
+{
+  "model_version": "calibrated-hybrid-v1",
+  "feature_type": "hybrid",
+  "labels": [
+    "apparel_footwear",
+    "consumer_electronics",
+    "dairy_grocery",
+    "digital_services",
+    "home_kitchen",
+    "personal_care",
+    "sporting_goods",
+    "shelf_stable_food"
+  ],
+  "training_rows": 336,
+  "reference_label_distribution": {
+    "consumer_electronics": 0.125,
+    "home_kitchen": 0.125,
+    "apparel_footwear": 0.125,
+    "personal_care": 0.125,
+    "digital_services": 0.125,
+    "dairy_grocery": 0.125,
+    "sporting_goods": 0.125,
+    "shelf_stable_food": 0.125
+  },
+  "training_data": "synthetic seed=41; template-family split"
+}

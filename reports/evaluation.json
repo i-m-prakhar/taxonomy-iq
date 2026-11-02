@@ -1,0 +1,90 @@
+{
+  "dataset": "synthetic; NOT statutory tax labels or real catalog data",
+  "split": "template-family disjoint 70/10/20; 6 variants/template; seed=41",
+  "train_count": 336,
+  "validation_count": 48,
+  "test_count": 96,
+  "candidate_models": {
+    "word": {
+      "validation_macro_f1": 0.17619,
+      "fit_seconds": 0.0453
+    },
+    "hybrid": {
+      "validation_macro_f1": 0.19193,
+      "fit_seconds": 0.1099
+    }
+  },
+  "selected_by_validation": "hybrid",
+  "test_accuracy": 0.51042,
+  "test_macro_f1": 0.47374,
+  "test_log_loss": 1.55948,
+  "expected_calibration_error": 0.08132,
+  "mean_batch_inference_ms_per_item": 0.10368,
+  "coverage_at_0_70": 0.1562,
+  "accuracy_at_0_70": 0.8,
+  "classification_report": {
+    "apparel_footwear": {
+      "precision": 0.25,
+      "recall": 0.25,
+      "f1-score": 0.25,
+      "support": 12.0
+    },
+    "consumer_electronics": {
+      "precision": 0.375,
+      "recall": 0.25,
+      "f1-score": 0.3,
+      "support": 12.0
+    },
+    "dairy_grocery": {
+      "precision": 0.875,
+      "recall": 0.5833333333333334,
+      "f1-score": 0.7,
+      "support": 12.0
+    },
+    "digital_services": {
+      "precision": 0.9230769230769231,
+      "recall": 1.0,
+      "f1-score": 0.96,
+      "support": 12.0
+    },
+    "home_kitchen": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 12.0
+    },
+    "personal_care": {
+      "precision": 0.42857142857142855,
+      "recall": 0.75,
+      "f1-score": 0.5454545454545454,
+      "support": 12.0
+    },
+    "sporting_goods": {
+      "precision": 0.29411764705882354,
+      "recall": 0.4166666666666667,
+      "f1-score": 0.3448275862068966,
+      "support": 12.0
+    },
+    "shelf_stable_food": {
+      "precision": 0.5882352941176471,
+      "recall": 0.8333333333333334,
+      "f1-score": 0.6896551724137931,
+      "support": 12.0
+    },
+    "accuracy": 0.5104166666666666,
+    "macro avg": {
+      "precision": 0.4667501616031028,
+      "recall": 0.5104166666666667,
+      "f1-score": 0.4737421630094044,
+      "support": 96.0
+    },
+    "weighted avg": {
+      "precision": 0.46675016160310273,
+      "recall": 0.5104166666666666,
+      "f1-score": 0.47374216300940436,
+      "support": 96.0
+    }
+  },
+  "python_version": "3.12.14",
+  "limitations": "Tiny synthetic holdout; no real-world effectiveness, legal tax accuracy or production SLO claims."
+}
